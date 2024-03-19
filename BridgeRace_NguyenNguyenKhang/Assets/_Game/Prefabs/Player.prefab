@@ -1,67 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2049006571293382470
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1225021750607096874}
-  m_Layer: 0
-  m_Name: Lower
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1225021750607096874
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049006571293382470}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00003886223, y: 0.029, z: 0.317}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5395246286211406285}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3963090200400013764
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2750465372712921973}
-  m_Layer: 0
-  m_Name: Upper
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2750465372712921973
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3963090200400013764}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.00003886223, y: 1.24, z: 0.26}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5395246286211406285}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4092324862692623606
 GameObject:
   m_ObjectHideFlags: 0
@@ -126,8 +64,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2628275258995834302}
-  - {fileID: 1225021750607096874}
-  - {fileID: 2750465372712921973}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &6895656925819515119
@@ -192,16 +128,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd3f8a28cc9ca184aa2b463819313dc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  colorType: 0
   rb: {fileID: 8830442577236943281}
   renderer: {fileID: 6359406120861048802}
   amin: {fileID: 8257823500364490692}
-  colorType: 0
   brickTransform: {fileID: 6433867816794118658}
-  brickPlayerPrefabs: {fileID: 6174541161340525887, guid: e2d435e8aefbf994588aa5d3647b4d51, type: 3}
+  brickPlayerPrefabs: {fileID: 6418890860515922908, guid: e2d435e8aefbf994588aa5d3647b4d51, type: 3}
   model: {fileID: 4629096784274404576}
   layerMaskStair:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
+  currentStage: {fileID: 0}
   moveSpeed: 0.2
   rotationSpeed: 360
 --- !u!1001 &2590479155923098197

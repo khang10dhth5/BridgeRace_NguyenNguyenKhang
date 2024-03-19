@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
-    [SerializeField] protected Rigidbody rb;
+    public ColorType colorType;
+    public Stack brickStack = new Stack();
+    public Stage currentStage;
 
+    [SerializeField] protected Rigidbody rb;
     [SerializeField] private Renderer renderer;
     [SerializeField] private Animator amin;
-    [SerializeField] private ColorType colorType;
     [SerializeField] private Transform brickTransform;
     [SerializeField] private PlayerBrick brickPlayerPrefabs;
     [SerializeField] private Transform model;
     [SerializeField] private LayerMask layerMaskStair;
 
     private string currentAmin;
-    protected Stack brickStack=new Stack();
+
     public virtual void Start()
     {
         renderer.material=ColorManager.Instance.colorSO.listMaterial[(int)colorType];
@@ -35,7 +37,7 @@ public class Character : MonoBehaviour
     }
 
 
-    protected void ChangeAmin(string aminName)
+    public void ChangeAmin(string aminName)
     {
         if(currentAmin==null)
         {

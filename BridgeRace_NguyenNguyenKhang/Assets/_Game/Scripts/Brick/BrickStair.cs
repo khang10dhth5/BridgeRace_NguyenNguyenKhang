@@ -5,7 +5,9 @@ using UnityEngine;
 public class BrickStair : MonoBehaviour
 {
     [HideInInspector] public ColorType colorType;
+
     [SerializeField] private Renderer renderer;
+
     // Start is called before the first frame update
     void Start()
     {

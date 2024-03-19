@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraFollow : MonoBehaviour
+public class CameraFollow : SingletonMono<CameraFollow>
 {
-    [SerializeField] private Transform target;
+    public Transform target;
+
     [SerializeField] private Vector3 offset;
     // Update is called once per frame
     void Update()

@@ -24,7 +24,7 @@ public class Player : Character
     private void FixedUpdate()
     {
 
-        if (Input.touchCount > 0)
+        if (Input.touchCount > 0 && GameManager.Instance.gameState == GameState.PlayGame)
         {
             touch = Input.GetTouch(0);
             if (touch.phase == TouchPhase.Moved)
@@ -62,8 +62,5 @@ public class Player : Character
             ChangeAmin(AminState.idle.ToString());
         }
     }
-    private void Update()
-    {
 
-    }
 }
