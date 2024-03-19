@@ -13,9 +13,9 @@ public class Player : Character
     {
         base.Start();
     }
-    public override void Onit()
+    public override void OnInit()
     {
-        base.Onit();
+        base.OnInit();
     }
     public override void OnDespawn()
     {

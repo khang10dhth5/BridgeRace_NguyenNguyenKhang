@@ -1018,6 +1018,7 @@ MonoBehaviour:
   finishPoint: {fileID: 9065383495723050762}
   startPoint: {fileID: 6407889253755886298}
   firstStage: {fileID: 2633263758320747715}
+  player: {fileID: 0}
   playerPrefabs: {fileID: 8309682007591533512, guid: d8560251891a9f245b41b6df966a316e, type: 3}
 --- !u!1 &7895125874394205247
 GameObject:
@@ -1172,7 +1173,6 @@ Transform:
   - {fileID: 2412641450797875395}
   - {fileID: 747781629913070238}
   - {fileID: 830414845551451670}
-  - {fileID: 2187736840839868236}
   m_Father: {fileID: 7912321076878241095}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9162255160960228578
@@ -1199,7 +1199,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9162255160960228578}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1207,7 +1207,7 @@ Transform:
   - {fileID: 4245325377524368686}
   - {fileID: 3490148999505224174}
   - {fileID: 3471587020370318430}
-  m_Father: {fileID: 8946657468935564260}
+  m_Father: {fileID: 7329673008209560367}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9190915298761259133
 GameObject:
@@ -6183,13 +6183,28 @@ PrefabInstance:
       propertyPath: listBrick.Array.data[20]
       value: 
       objectReference: {fileID: 4714436642616603789}
+    - target: {fileID: 6935656151663714635, guid: 0f91b3a152df5174a98753cc411f093f, type: 3}
+      propertyPath: listColorType.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935656151663714635, guid: 0f91b3a152df5174a98753cc411f093f, type: 3}
+      propertyPath: listColorType.Array.data[1]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6935656151663714635, guid: 0f91b3a152df5174a98753cc411f093f, type: 3}
+      propertyPath: listColorType.Array.data[2]
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8089285529402334523, guid: 0f91b3a152df5174a98753cc411f093f, type: 3}
       propertyPath: m_Name
       value: Stage
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 2410383674729883303, guid: 0f91b3a152df5174a98753cc411f093f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2187736840839868236}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f91b3a152df5174a98753cc411f093f, type: 3}
 --- !u!114 &2633263758320747715 stripped

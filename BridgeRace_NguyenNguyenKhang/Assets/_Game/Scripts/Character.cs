@@ -20,16 +20,12 @@ public class Character : MonoBehaviour
 
     public virtual void Start()
     {
-        renderer.material=ColorManager.Instance.colorSO.listMaterial[(int)colorType];
-        Debug.Log(colorType);
+        OnInit();
     }
-    private void Update()
-    {
-            
-    }
-    public virtual void Onit()
-    {
 
+    public virtual void OnInit()
+    {
+        renderer.material = ColorManager.Instance.colorSO.listMaterial[(int)colorType];
     }
     public virtual void OnDespawn()
     {

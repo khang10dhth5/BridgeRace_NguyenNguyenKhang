@@ -14,7 +14,7 @@ public class Enemy : Character
     public override void Start()
     {
         base.Start();
-        Onit();
+        OnInit();
     }
     // Update is called once per frame
     void Update()
@@ -25,9 +25,9 @@ public class Enemy : Character
         }
     }
 
-    public override void Onit()
+    public override void OnInit()
     {
-        base.Onit();
+        base.OnInit();
         currentState = new IdleState();
     }
     public void StopMoving()

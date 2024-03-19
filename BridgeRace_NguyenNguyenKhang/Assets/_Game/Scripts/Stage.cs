@@ -18,6 +18,18 @@ public class Stage : MonoBehaviour
         }
         return null;
     }
+    public void ClearColorType(ColorType colorType)
+    {
+        listColorType.Remove(colorType);
+        for (int i = 0; i < listBrick.Count; i++)
+        {
+            if(listBrick[i].colorType==colorType)
+            {
+                listBrick[i].SetColor(listColorType[Random.Range(0, listColorType.Count)]);
+            }
+
+        }
+    }
     public void SetColorForBrick()
     {
         for (int i = 0; i < listBrick.Count; i++)
@@ -50,6 +62,8 @@ public class Stage : MonoBehaviour
         if (other.CompareTag(TagName.Player.ToString()) || other.CompareTag(TagName.Enemy.ToString()))
         {
             Character character = other.GetComponent<Character>();
+            character.currentStage.ClearColorType(character.colorType);
+
             character.currentStage = this;
             listColorType.Add(character.colorType);
             RandomBrick();
